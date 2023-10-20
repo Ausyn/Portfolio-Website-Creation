@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <nav class="topNave">
+    <nav class="topNav">
         <div class="navContainer">
             <a href="./index.html" class="logo">
-                <img src="../Portfolio Website Creation/img/Group 2.png" alt="logo">
+                <img src="./img/logo.png" alt="logo">
             </a>
             <ul class="nav">
                 <li><a href="./index.html" class="navItem selected">Home</a></li>
@@ -22,13 +22,19 @@
                 <li><a href="#" class="navItem">Resume</a></li>
             </ul>
             <div class="mobileMenu">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="navIcon"></i>
+            </div>
+            <div class="mobileNav">
+                <a href="./index.html" class="mNavItem selected">Home</a>
+                <a href="#" class="mNavItem ">About</a>
+                <a href="#" class="mNavItem ">Projects</a>
+                <a href="#" class="mNavItem ">Resume</a>
             </div>
         </div>
     </nav>
     <section class="hero">
         <div class="heroContainer">
-            <img src="" alt="heroImage">
+            <img src="./img/profile.png" alt="heroImage">
             <div class="heroContent">
                 <h1 class="heroTitle">
                     Title
@@ -52,8 +58,7 @@
         <!--    Project 1   -->
         <div class="projectContainer">
             <div class="projectCard">
-                <img src="" alt="Project 1" class="cardImage">
-            </div>
+                <img src="./img/project1.png" alt="Project 1" class="cardImage">
             <div class="cardContent">
                 <h3 class="cardTitle">Title</h3>
                 <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -62,46 +67,38 @@
                     View Case Study
                 </a>
             </div>
-
-            <!-- Project 2-->
-<div class="projectCard">
-    <img src="" alt="Project 1" class="cardImage">
-</div>
-<div class="cardContent">
-    <h3 class="cardTitle">Title</h3>
-    <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <a href="#" class="btnPrimary">
-        View Case Study
-    </a>
-</div>
-<!-- Project 3-->
-<div class="projectCard">
-    <img src="" alt="Project 1" class="cardImage">
-</div>
-<div class="cardContent">
-    <h3 class="cardTitle">Title</h3>
-    <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <a href="#" class="btnPrimary">
-        View Case Study
-    </a>
-</div>
-<!-- Project 4 -->
-<div class="projectCard">
-    <img src="" alt="Project 1" class="cardImage">
-</div>
-<div class="cardContent">
-    <h3 class="cardTitle">Title</h3>
-    <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <a href="#" class="btnPrimary">
-        View Case Study
-    </a>
-</div>
-
+        </div>
+       
+        <div class="projectContainer ">
+            <div class="projectCard">
+                <img src="./img/project 2.png" alt="Project 2" class="cardImage">
+            <div class="cardContent">
+                <h3 class="cardTitle">Title</h3>
+                <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="btnPrimary">
+                    View Case Study
+                </a>
+            </div>
+        </div>
+       
+        <div class="projectContainer ">
+            <div class="projectCard ">
+                <img src="./img/Project 3.png" alt="Project 3" class="cardImage">
+            <div class="cardContent">
+                <h3 class="cardTitle">Title</h3>
+                <p class="cardText">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="btnPrimary">
+                    View Case Study
+                </a>
+            </div>
+        </div>
+       
         </div>
     </section>
+   
+   
     <footer>
         <div class="footerContent">
             <h5 class="footerTitle">name</h5>
@@ -116,6 +113,8 @@
             </p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./nav.js"></script>
 </body>
 
 

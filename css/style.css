@@ -5,7 +5,7 @@ body {
 
 }
 
-.topNave {
+.topNav {
     background-color: var(--primary-extra-light);
 }
 
@@ -15,6 +15,7 @@ body {
     align-items: center;
     width: var(--container-width);
     margin: auto;
+    z-index: 0;
 }
 
 ul.nav {
@@ -41,7 +42,7 @@ ul.nav {
 }
 
 .mobileMenu {
-    display: none;
+    position: relative;
 }
 
 
@@ -179,35 +180,40 @@ footer {
     margin-top: 0;
 }
 
-@media all and (max-width:1400px) {
-    :root {
-        --container-width: 1140px;
-    }
+.mNavItem {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-extra-light);
 }
 
-@media all and (max-width:1200px) {
-    :root {
-        --container-width: 960px;
-    }
+.mobileNav {
+    position: absolute;
+    right: -20px;
+    top: 50px;
+    background-color: white;
+    width: 100vw;
+    display: none;
+    z-index: 1;
 }
 
-@media all and (max-width:992px) {
-    :root {
-        --container-width: 720px;
-    }
+.mNavItem.selected{
+    font-weight: bold;
+    color: var(--Secondary-dark);
 }
 
-@media all and (max-width:768px) {
-    :root {
-        --container-width: 540px;
-    }
-}
 
-@media all and (max-width:576px) {
-    :root {
-        --container-width: calc(100% - 40px);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width:1400px) {
     .heroImage {
@@ -277,3 +283,4 @@ footer {
 
 
 }
+
